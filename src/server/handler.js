@@ -1,7 +1,7 @@
 const predictClassification = require('../services/inferenceService');
 const crypto = require('crypto');
-const storeData = require('../services/simpanData');
-const getAllData = require('../services/getdata');
+const simpanData = require('../services/simpanData');
+const getdata = require('../services/getdata');
  
 async function postPredictHandler(request, h) {
   const { image } = request.payload;
